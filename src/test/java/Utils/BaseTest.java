@@ -15,10 +15,11 @@ public class BaseTest {
    
 public void setup() {
 	ChromeOptions options = new ChromeOptions();
-	  options.addArguments("--headless=new");
+//	  options.addArguments("--headless=new");
 	this.driver	= new ChromeDriver(options);
-	driver.get("https://automationexercise.com/");
 	driver.manage().window().maximize();	
+	driver.get("https://automationexercise.com/");
+	
 		
 	}
 	
