@@ -2,7 +2,7 @@
 #Keywords Summary :
 #Feature: Register user to the demo application
 #Scenario: Registration
-#test
+#test  
 
 Feature: Register user to the demo application
   
