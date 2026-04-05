@@ -3,37 +3,12 @@ package Utils;
 import java.io.FileInputStream;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.AfterTest;
 
 public class BaseTest {
-	
-  static WebDriver driver;
 
-   
-public void setup() {
-	ChromeOptions options = new ChromeOptions();
-//	  options.addArguments("--headless=new");
-	this.driver	= new ChromeDriver(options);
-	driver.manage().window().maximize();	
-	driver.get("https://automationexercise.com/");
-	
-		
-	}
-	
-
-@AfterTest
-	public void tearDown() {
-		if(driver!=null) {
-			driver.quit();
-		}
-	}
-	
 //For Locators
 	    public static String getLocator(String locatorName,String pageName) throws Exception {
-	        String filePath = "C:\\Users\\arunk\\OneDrive\\Desktop\\Cucumber\\SeleniumCucumber\\Locators\\MobileLocators.xlsx";
+	        String filePath = System.getProperty("user.dir") + "/Locators/MobileLocators.xlsx";
 	        FileInputStream fis = new FileInputStream(filePath);
 	        XSSFWorkbook workbook = new XSSFWorkbook(fis);
 	        
