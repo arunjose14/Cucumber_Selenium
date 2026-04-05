@@ -1,4 +1,4 @@
-CUCUMBER SELENIUM JAVA PROJECT
+CUCUMBER SELENIUM JAVA FRAMEWORK
 ===============================
 Dependencies are - > Maven , TestNg , Apacge poi for Excel and Cucumber.
 
